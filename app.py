@@ -1,6 +1,6 @@
 import os
-from flask import flask
-from micawber import bootstrap_basic
+from flask import Flask
+from micawber.providers import bootstrap_basic
 from peewee import SqliteDatabase
 
 APP_ROOT = os.path.dirname(os.path.realpath(__file__))
